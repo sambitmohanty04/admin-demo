@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+:root {
+  --color-212529: #212529;
+  --color-ffd333: #ffd333;
+  --color-47ad24: #47ad24;
+  --color-e52e2e: #e52e2e;
+  --color-828599: #828599;
+  --color-3d464d: #ed464d;
+  --color-c3d4da: #ced4da;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.green {
+  color: var(--color-47ad24);
+  font-size: 14px;
+  font-family: Roboto !important;
+}
+.red {
+  color: var(--color-212529);
+  font-size: 14px;
+  font-family: Roboto !important;
+}
+.quill {
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control {
+  box-shadow: none;
+  border-color: var(--color-c3d4da);
+}
+.title {
+  font: 28px;
+  font-family: Roboto !important;
+  color: var(--color-212529);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sub-title {
+  font: 24px;
+  font-family: Roboto !important;
+  color: var(--color-212529);
 }
-
-.App-link {
-  color: #61dafb;
+.desc {
+  font: 14px;
+  font-family: Roboto !important;
+  color: var(--color-828599);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ql-editor.ql-blank {
+  height: 200px;
 }
+/* --header Starts-- */
+.sliderBg {
+  background-color: #060038 !important;
+}
+.header {
+  background-color: #060038 !important;
+}
+.menuBar {
+  background-color: #060038;
+}
+.menuBar:active {
+  background-color: #060038;
+}
+.menuBar li:hover {
+  background-color: #1900ff !important;
+}
+.collapsibleMenu {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+  color:#fff;
+}
+.collapsibleMenu:hover {
+  color: #1890ff;
+}
+.notificationIcon {
+  color: #ffffff;
+}
+.userImage svg{
+  width:32px;
+  height: 32px;
+  border: 2px solid #ced4da;
+  color: #ffffff;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.userImage svg:hover{
+  background-color: #ccc;
+  color: #002e9b;
+}
+.userImgIcon {
+  font-size: 12px;
+  padding: 5px;
+}
+/* --header ends-- */
+.productList {
+  border:1px solid #060038;
+}
+.productList thead {
+  background-color: #060038;
+  color: #fff;
+}
+.productList thead tr th {
+  border:1px solid #fff;
+  font-weight: 400;
+}
+.productList thead tr th:first-child {
+  border-left-color: #060038;
+}
+.productList thead tr th:last-child {
+  border-right-color: #060038;
+}
+.productList tbody tr td {
+border:1px solid #060038; 
+  font-weight: 400;
+  margin: 0px 5px;
+}
+.productList-btn {
+  width: 300px;
+  margin: 0px 5px;
+}
+.productList-btn  .btn {
+  width: 25%;
+  height: 24px;
+  line-height: 0px;
+  font-size: 14px;
+  margin: 0px 5px;
+  font-weight: 500;
+  color: #000;
+}
+/* --product table end--*/
